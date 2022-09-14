@@ -9,7 +9,7 @@
     function checkCookie() {
       let status = getCookie("username");
       if (status != "") {
-        alert("Welcome again " + status);
+        window.location.href="/already-vote.html";
       } else {
         status = "already vote"
          setCookie(status);
