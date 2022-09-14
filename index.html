@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BFA 2022</title>
     <style>
@@ -19,36 +19,33 @@
         border-radius: 0 !important;
       }
     </style>
-</head>
+  </head>
 
-<body onload="checkCookie()">
-  <!-- <div
+  <body onload="checkCookie()">
+    <div
       id="wrapper"
       data-tf-widget="z5KZmM66"
       data-tf-inline-on-mobile
       data-tf-medium="snippet"
-    ></div> -->
-    <h3>Vote ges</h3>
-    <a href="/already-vote.html">submit</a>
-</body>
-<script src="//embed.typeform.com/next/embed.js"></script>
-<script>
-  function checkCookie() {
+    ></div>
+    <a href="file:///D:/Kantor/Programming/cookiesbeautyfest/already-vote.html">OK</a>
+  </body>
+  <script src="/embed.typeform.com/next/embed.js"></script>
+  <script>
+    function checkCookie() {
       let status = getCookie("statusvote");
       if (status != "") {
-        window.location.href="/already-vote.html";
-      } else {
-         setCookie("active");
+        window.location.href = "file:///D:/Kantor/Programming/cookiesbeautyfest/already-vote.html";
       }
     }
-    
+
     function getCookie(cname) {
       let name = cname + "=";
       let decodedCookie = decodeURIComponent(document.cookie);
-      let ca = decodedCookie.split(';');
-      for(let i = 0; i < ca.length; i++) {
+      let ca = decodedCookie.split(";");
+      for (let i = 0; i < ca.length; i++) {
         let c = ca[i];
-        while (c.charAt(0) == ' ') {
+        while (c.charAt(0) == " ") {
           c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
@@ -57,7 +54,6 @@
       }
       return "";
     }
-    
-    console.log("Hasil set cookies",getCookie("statusvote"))
-</script>
+    console.log("Ini vote ges",getCookie("statusvote"))
+  </script>
 </html>

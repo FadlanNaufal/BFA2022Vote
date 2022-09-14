@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Already Vote</title>
 </head>
-<body>
+<body onload="setCookie()">
     <h3>You Already Vote</h3>
+    <p>3 detik lagi akan dialihkan ke microsite</p>
     <a href="https://beautyfestasia.popbela.com/">Back to microsite</a>
 </body>
 <script>
-    setTimeout(function(){
-        window.location="https://bfa.popbela.com/";
-    }, 3000);
-</script>
-<script>
-    
     function setCookie() {
       document.cookie = "statusvote=active";
+      setTimeout(function(){
+        window.location="file:///D:/Kantor/Programming/cookiesbeautyfest/index.html";
+        alert('redirect ke BFA')
+    }, 3000);
     }
-    
-    </script>
+</script>
+
 </html>
