@@ -22,28 +22,24 @@
 </head>
 
 <body onload="checkCookie()">
-  <div
+  <!-- <div
       id="wrapper"
       data-tf-widget="z5KZmM66"
       data-tf-inline-on-mobile
       data-tf-medium="snippet"
-    ></div>
+    ></div> -->
+    <h3>Vote ges</h3>
+    <a href="/already-vote.html">submit</a>
 </body>
 <script src="//embed.typeform.com/next/embed.js"></script>
 <script>
-
-    function checkCookie() {
-      let status = getCookie("username");
+  function checkCookie() {
+      let status = getCookie("statusvote");
       if (status != "") {
         window.location.href="/already-vote.html";
       } else {
-        status = "already vote"
-         setCookie(status);
+         setCookie("active");
       }
-    }
-    
-    function setCookie(cvalue) {
-      document.cookie = "username=" + cvalue ;
     }
     
     function getCookie(cname) {
@@ -62,7 +58,6 @@
       return "";
     }
     
-    console.log("Hasil set cookies",getCookie("username"))
-    
-    </script>
+    console.log("Hasil set cookies",getCookie("statusvote"))
+</script>
 </html>
