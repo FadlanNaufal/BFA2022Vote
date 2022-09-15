@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/asset/favicon.ico" />
     <title>BFA 2022</title>
     <style>
       * {
@@ -24,7 +25,7 @@
   <body onload="checkCookie()">
     <div
       id="wrapper"
-      data-tf-widget="CL4yNNqq"
+      data-tf-widget="z5KZmM66"
       data-tf-inline-on-mobile
       data-tf-medium="snippet"
     ></div>
@@ -34,7 +35,8 @@
     function checkCookie() {
       let status = getCookie("statusvote");
       if (status != "") {
-        window.location.href = "https://bfa2022vote.netlify.app/already-vote.html";
+        window.location.href =
+          "https://bfa2022vote.netlify.app/already-vote.html";
       }
     }
 
@@ -53,6 +55,6 @@
       }
       return "";
     }
-    console.log("Ini vote ges",getCookie("statusvote"))
+    console.log("Ini vote ges", getCookie("statusvote"));
   </script>
 </html>
